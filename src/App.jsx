@@ -10,8 +10,8 @@ function App() {
 useEffect(()=>{
 const usersCount = async (req,res) =>{
   try {
-    // const data = await axios.get('https://api.noris.tech/statistic/statistic-users')
-    const data = await axios.get('http://localhost:5005/statistic/statistic-users')
+    const data = await axios.get('https://api.noris.tech/statistic/statistic-users')
+    // const data = await axios.get('http://localhost:5005/statistic/statistic-users')
     console.log(data);
     setUsers(data.data)
   } catch (error) {
